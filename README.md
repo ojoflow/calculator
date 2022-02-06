@@ -1,1 +1,3 @@
-# calculator
+# calculator-project
+The final project in the Foundations section of The Odin Project
+Both mouse and keys work to input on the calculator
