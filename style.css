@@ -1,76 +1,86 @@
-body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 2em;
-}
 :root {
     --bg-color:  #ff6f00
 }
 
-.container-output {
-    margin: 0 auto;
+body {
+   background-color: rgb(62, 62, 133);
+   padding: 30px;
+}
+
+.calculator {
+    margin: 2rem auto;
+    width: 400px; 
+    height: 600px;
+}
+.display {
+    display: flex;
+    justify-content: center;
     align-items: center;
     position: relative;
-    margin-top: 70px;
-    margin-bottom: -10px;
+    margin-top: 80px;
+    padding-bottom: -20px;
     background: var(--bg-color);
-    width: 50%;
+   
     height: 200px;
+    /* box-shadow: -0.5rem 1rem 1rem rgba(0, 0, 0, 0.3); */
    
 }
 
-.container-output:after {
+.display:after {
     top: -80px;
-   /*  display: block; */
     position: absolute;
     content: '';
     border-radius: 100%;
     background: var(--bg-color);
     width: 100%;
-    height: 140px;
+    height: 170px;
 }
-.output {
+.screen {
     position: relative;
-    margin: 0 auto;
     z-index: 1;
-    background-color: #c9c9c9;
+    background-color: #dad7d7;
     width: 90%;
     height: 50%;
+    box-shadow: -0.5rem 1rem 1rem rgba(0, 0, 0, 0.3);
 }
-.container-buttons {
-    margin: 0 auto;
-    height: 350px;
+.calc-body{
     background: var(--bg-color);
-    width: 50%;
-    display: flex;
     border-bottom-left-radius: 40px;
-    border-bottom-right-radius: 40px;
-    gap:20px;
-
+    border-bottom-right-radius: 40px;  
+    box-shadow: -0.5rem 1rem 1rem rgba(0, 0, 0, 0.3);
+    display: grid;
+    grid-template-columns: auto auto;
+    height: 400px;
+    gap:5px;
 }
 .numbers {
-    margin-left: 45px;
     display: grid;
-    grid-template-columns: 70px 70px 70px;
-    grid-template-rows: 80px auto 80px; 
-    column-gap: 10px;
-    row-gap: 15px;
-    width: 50%;
+    grid-template-columns: repeat(3,auto);
+    margin-left: 10px;
+    margin-top: 10px; 
+    height: 75%;
+}
+.operands {
     
-}
-.operations {
     display: grid;
-    grid-template-columns: 70px 70px;
-    grid-template-rows: 80px 80px; 
-    column-gap: 15px;
-    row-gap: 15px;
-    width: 50%;
+    grid-template-columns: repeat(2, auto);
+    margin-right: 10px;
+    margin-top: 10px;
+    height: 75%
+   
 }
-.key {
-    line-height: 60px;
-    background-color: white;
-    text-align: center;
-    font-size: 20px;
-    color: #ee883a;
+button {
+    width: auto;
+    height: 60px;
+    padding: 0;
+    margin: 5px;
+    font-size: 200%;
+    border-radius: 15px;
+    color: #28036d;
+    background-color: #dad7d7;
+    cursor: pointer;
+}
+
+button[data-key="0"] {
+    grid-column: span 2;
 }
