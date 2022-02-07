@@ -1,7 +1,13 @@
 :root {
-    --bg-color:  #ff6f00
+    --bg-color:  #ff6f00;
+    --font-family: url(digital_display.ttf);
 }
+@font-face {
+     font-family: 'Bitwise';
+    src: url('Bitwise.ttf') format('truetype');
 
+    font-weight: normal;
+}
 body {
    background-color: rgb(62, 62, 133);
    padding: 30px;
@@ -18,9 +24,9 @@ body {
     align-items: center;
     position: relative;
     margin-top: 80px;
-    padding-bottom: -20px;
+    padding-bottom: -40px;
     background: var(--bg-color);
-   
+    
     height: 200px;
     /* box-shadow: -0.5rem 1rem 1rem rgba(0, 0, 0, 0.3); */
    
@@ -36,12 +42,19 @@ body {
     height: 170px;
 }
 .screen {
+    text-align: right;
+    font-size: 30px;
     position: relative;
     z-index: 1;
     background-color: #dad7d7;
     width: 90%;
-    height: 50%;
-    box-shadow: -0.5rem 1rem 1rem rgba(0, 0, 0, 0.3);
+    height: 70%;
+    font-family: Bitwise;
+    /* box-shadow: -0.5rem 1rem 1rem rgba(0, 0, 0, 0.3); */
+}
+.expression {
+    line-height: 6rem;
+   
 }
 .calc-body{
     background: var(--bg-color);
@@ -75,6 +88,8 @@ button {
     padding: 0;
     margin: 5px;
     font-size: 200%;
+    font-family:'Bebas Neue';
+    font-weight: 600;
     border-radius: 15px;
     color: #28036d;
     background-color: #dad7d7;

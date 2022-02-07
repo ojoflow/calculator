@@ -4,13 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet"> 
     <link href="style.css" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
     <div class="calculator">
         <div class="display">
-        <div class="screen"></div>
+        <div class="screen">
+            <div class="expression"></div>
+            <div class="solution">0</div>
+        </div>
         </div>
         <div class="calc-body">
        
@@ -25,14 +31,14 @@
                 <button data-key="2" class="number">2</button>
                 <button data-key="3" class="number">3</button>
                 <button data-key="0" class="number">0</button>
-                <button data-key="." class="decimal number">.</button>
+                <button data-key="." class="decimal">.</button>
             </div>    
             <div class="operands">
-                <button data-key="c" class="clear" onclick="clearAll()">C</button>
+                <button data-key="c" class="clear">C</button>
                 <button data-key="Backspace" class="del">⌫</button>
                 <button data-key="%" class="operator">%</button>
                 <button data-key="/" class="operator">÷</button>
-                <button data-key="*" class="operator">*</button>
+                <button data-key="*" class="operator">x</button>
                 <button data-key="-" class="operator">-</button>
                 <button data-key="+" class="operator">+</button>
                
@@ -40,5 +46,6 @@
             </div>
         </div>
     </div>
+    <script src="calculator.js" defer></script>
 </body>
 </html>
