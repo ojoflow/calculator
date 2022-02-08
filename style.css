@@ -2,12 +2,7 @@
     --bg-color:  #ff6f00;
     --font-family: url(digital_display.ttf);
 }
-@font-face {
-     font-family: 'Bitwise';
-    src: url('Bitwise.ttf') format('truetype');
 
-    font-weight: normal;
-}
 body {
    background-color: rgb(62, 62, 133);
    padding: 30px;
@@ -49,7 +44,7 @@ body {
     background-color: #dad7d7;
     width: 90%;
     height: 70%;
-    font-family: Bitwise;
+    font-family: Bebas Neue;
     /* box-shadow: -0.5rem 1rem 1rem rgba(0, 0, 0, 0.3); */
 }
 .expression {
